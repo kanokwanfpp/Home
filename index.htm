@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE SaiFone</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://nickzaahhaahha.github.io/HCI_work6/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bbootstrap 4 -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/summernote/summernote-bs4.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    .dropbtn {
+      background-color: #ffffff;
+      color: black;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {background-color: #ffffff;}
+    </style>
+<!--
+เนื่องจากมีปัญหาการ load font ข้ามเครื่อง ผ่านแฟ้ม all.min.css
+จึงเพิ่มการกำหนด font-face และเรียกแฟ้มใน current folder
+- https://adminlte.io/themes/v3/plugins/fontawesome-free/css/all.min.css
+- https://www.farahimpex.com/vendor/jeroennoten/laravel-adminlte/resources/assets/vendor/font-awesome/webfonts/
+github.io
+- https://nickzaahhaahha.github.io/HCI_work6/
+- https://github.com/Nickzaahhaahha/HCI_work6
+- https://nickzaahhaahha.github.io/HCI_work6/fontawesome-free/css/all.min.css
+- http://thaiall.github.io/www/adminlte/adminlte_github.htm
+--> 
+ 
+</head>
+<body class="hold-transition sidebar-mini layout-fixed" style="font-family:kanit;">
+<div class="wrapper">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit" />
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    
+
+    <!-- SEARCH FORM -->
+    <form action="https://thaiwebsearch.hypermart.net/cgi/srchweb.pl" class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search" name="SearchText" value="hello"> 
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-1 pb-1 mb-1 d-flex">
+        <img src="https://raw.githubusercontent.com/kanokwanfpp/Home/main/f01.jpg" alt="User Image" style="height:30px;">
+        <div class="info">
+          <a href="https://kanokwanfpp.github.io/mycool/" class="d-block">kanokwanfpp</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+          <!-- li class="nav-item has-treeview menu-open" -->
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link active">
+              <i class="fab fa-app-store-ios"></i>
+              <p> Social Media
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="https://www.facebook.com/kanokwan.feepakphoh/" class="nav-link active">
+                  <i class="fab fa-facebook-f"></i>
+                  <p>Facebook</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.youtube.com/channel/UC84lhMJCJCTaIOzoYNqrPDQ?view_as=subscriber" class="nav-link">
+                  <i class="fab fa-youtube-square"></i>
+                  <p>Youtube</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.instagram.com/kanokwan_fpp/" class="nav-link">
+                  <i class="fab fa-instagram"></i>
+                  <p>Instagram</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link active">
+              <i class="fas fa-ankh"></i>
+              <p>
+                กนกวรรณ ฝีปากเพราะ
+                 <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="https://github.com/kanokwanfpp" class="nav-link">
+                  <i class="fab fa-apple"></i>
+                  <p>Mygithub</p>
+                </a>
+              </li>
+                                        
+            </ul>
+          </li>
+              <li class="nav-item has-treeview menu-close">
+                <a href="" class="nav-link active">
+                  <i class="fas fa-archway"></i>
+
+                  <p>
+                   วิชาที่สนใจ
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item has-treeview menu-close">
+                    <a href="https://kanokwanfpp.github.io/Home/" class="nav-link">
+                      <i class="fas fa-icons"></i>
+                      <p>
+                        TECH100
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="https://kanokwampff.blogspot.com/2017/11/blog-post.html?fbclid=IwAR2SPYmgerZM4COBMIliDPKq_A0RVSVpxib-zv6X7B6v2p0uvnjUnj4tCCU" class="nav-link">
+                          <i class="fas fa-thumbtack"></i>
+                          <p>Assignment 1</p>
+                        </a>
+                      </li>                       
+                      <li class="nav-item">
+                        <a href="https://scontent.fbkk15-1.fna.fbcdn.net/v/t31.0-8/23000384_1523587301055506_3561091009078058101_o.jpg?_nc_cat=105&ccb=2&_nc_sid=dbeb18&_nc_eui2=AeHCNb8RdkLRG6dLsjoTJCTy3kUyehTPoJneRTJ6FM-gmbjGXR-ILIJmaFYTVhvvveDjKupekp4XIxyaVxaw3dVL&_nc_ohc=VnPZFPshp5EAX-fF4eU&_nc_ht=scontent.fbkk15-1.fna&oh=11e3e122d9baa03236f25a8beb10fbc7&oe=5FCA8C9D" class="nav-link">
+                          <i class="fas fa-thumbtack"></i>
+                          <p>Assignment 2</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="https://kanokwanfpp.blogspot.com/2017/09/blog-post.html?fbclid=IwAR0h85oWto9NtjP6BdlGogiuOgLsfh-G2SWYoA1WJ_qWfiMDQ_IuphOblxU" class="nav-link">
+                          <i class="fas fa-thumbtack"></i>
+                          <p>Assignment 3 </p>
+                        </a>
+                      </li>      
+                    </ul>
+                  </li>	
+                </ul>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item has-treeview menu-close">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-icons"></i>
+                      <p>
+                        CPSC231_611
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="https://kanokwanfpp.github.io/Code-1-10/?fbclid=IwAR3ZkMZTjv5mrQQk6rfcWH7OHrNBtU6L6qYYOcH62YSOvLCb2b8uVIFwuKw" class="nav-link">
+                          <i class="fas fa-thumbtack"></i>
+                          <p>โค้ด 1-10 ภาษา C, java และ php</p>
+                        </a>
+                      </li>                       
+                      <li class="nav-item">
+                        <a href="https://github.com/kanokwanfpp/CodeHelloWorld?fbclid=IwAR3y_i_1GCinVzygjcjncKBSxEJc6frd06nCZKAHCrDXGKJt683pIj9yr4Q" class="nav-link">
+                          <i class="fas fa-thumbtack"></i>
+                          <p>Code Hello World</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="https://github.com/kanokwanfpp/Queue?fbclid=IwAR3pzXdvDAYAbTVjXRl88NwQ0y1Iw95gPkaiFHXrLIx-VB_WUH7VFWeYsuU" class="nav-link">
+                          <i class="fas fa-thumbtack"></i>
+                          <p>Queue</p>
+                        </a>
+                      </li>      
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item has-treeview menu-close">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-icons"></i>
+                      <p>
+                        CPSC331_621
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="https://github.com/kanokwanfpp/Nothwind?fbclid=IwAR0sttwPb_dGh7iucuf74k3WxKI9dQ5TEj4aG1wYumAmsFDVGxX8ummfjr4" class="nav-link">
+                          <i class="fas fa-thumbtack"></i>
+                          <p>Final Project</p>
+                        </a>
+                      </li>                       
+                      <li class="nav-item">
+                        <a href="https://kanokwanfpp.github.io/HW_06/?fbclid=IwAR3pzXdvDAYAbTVjXRl88NwQ0y1Iw95gPkaiFHXrLIx-VB_WUH7VFWeYsuU" class="nav-link">
+                          <i class="fas fa-thumbtack"></i>
+                          <p>งานมอบหมายที่ 7</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="https://github.com/kanokwanfpp/Midterm-project/blob/master/%E0%B8%AA%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%97%E0%B8%B3%E0%B8%AA%E0%B8%B3%E0%B9%80%E0%B8%A3%E0%B9%87%E0%B8%88.pdf?fbclid=IwAR1b2W23ghGnb6FE5iGvFL5trLPwEL-xFRwY9yeuuSAQH1qFbhOfM9OnP5s" class="nav-link">
+                          <i class="fas fa-thumbtack"></i>
+                          <p>Midterm</p>
+                        </a>
+                      </li>      
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item has-treeview menu-close">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-icons"></i>
+                      <p>
+                        CPSC321_CPSC332_621
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="https://github.com/kanokwanfpp/Midterm-project/blob/master/%E0%B8%9A%E0%B8%97%E0%B8%99%E0%B8%B3.pdf?fbclid=IwAR0nbMTpxmpvH0eQQymFRQa2iNamXLE7CaosGlKi97kGZUA-Y_Xcf6kW-mk" class="nav-link">
+                          <i class="fas fa-thumbtack"></i>
+                          <p>โครงงานวิจัย</p>
+                        </a>
+                      </li>                       
+                      <li class="nav-item">
+                        <a href="https://create.kahoot.it/details/hcl/1064a7e9-06e3-452d-97d7-4c8243cc883d?fbclid=IwAR11ucKkJChb-IcU8lykIZLH6q5nRrmwF8MoZWeGZZFQCkmQafuUei4xnf0" class="nav-link">
+                          <i class="fas fa-thumbtack"></i>
+                          <p>Kahoot game</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="https://github.com/kanokwanfpp/-hw_9?fbclid=IwAR3o3WNqM6owSFvijfQkFCGJJ_8V10Wcf0Ha_pYPseCtuyG_NbVlukmN-fs" class="nav-link">
+                          <i class="fas fa-thumbtack"></i>
+                          <p>ติดตั้ง Atom</p>
+                        </a>
+                      </li>      
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item has-treeview menu-close">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-icons"></i>
+                      <p>
+                        CPSC471_631_phpjs
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="https://kanokwanfpp.github.io/Home/?fbclid=IwAR0x0QKJEdz9kI7jVd9dYGhWgmcQpLrkZ5QawbGwlOFrjBYCMfjFFbtf4Ac" class="nav-link">
+                          <i class="fas fa-thumbtack"></i>
+                          <p>Homepage</p>
+                        </a>
+                      </li>                       
+                      <li class="nav-item">
+                        <a href="https://github.com/kanokwanF/cpsc471?fbclid=IwAR2d7muOsuZ3543Teat9qMYhYR_xJwedKxWikhUrDiIRTIgR0CefxGju6fY" class="nav-link">
+                          <i class="fas fa-thumbtack"></i>
+                          <p>Midterm</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="http://pawnshop.infinityfreeapp.com/" class="nav-link">
+                          <i class="fas fa-thumbtack"></i>
+                          <p>10000 ระเบียน</p>
+                        </a>
+                      </li>      
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>      
+      
+		
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">  
+    <!-- Main content -->
+    <section class="content">
+	
+
+<div class="attachment-block clearfix">
+<div class="attachment-pushed">
+<h4 class="attachment-heading"><a href="https://upload.facebook.com/AppCreateUniversity/"><center>จังหวัดลำปาง</center></a></h4>
+<div class="attachment-text">
+  
+<p>
+<span class="bigcap"></span><b>ประวัติจังหวัดลำปาง<br>
+  จังหวัดลำปาง เป็นจังหวัดที่มีอายุเก่าแก่ไม่น้อยกว่า 1,300 ปี มีชื่อเรียกขานกันหลายชื่อ ซึ่งปรากฏหลักฐานตามตำนานต่าง ๆ รวม 11 ชื่อ ได้แก่ กุกกุฏนคร ลัมภกับปะนคร ศรีนครชัย นครเวียงคอกวัว เวียงดิน เขลางค์นคร นครลำปางคำเขลางค์ อาลัมภางค์ เมืองลคร และเมืองนครลำปาง จากการที่เรียกขานกันว่า “ กุกกุฏนคร ” แปลว่าเมืองไก่ ดังนั้น ตราประจำจังหวัดลำปาง คือ “ ไก่ขาว ”
+  จังหวัดลำปาง สร้างเมื่อ พ.ศ.1223 จากหนังสือพงศาวดารโยนกกล่าวว่า “ สุพรหมฤาษี ” สร้างเมืองเพื่อให้ เจ้าอนันตยศ โอรสพระนางจามเทวี ครองคู่กับเมืองหริภุญชัย (ลำพูน) ให้ชื่อเมืองว่า “ นครเขลางค์ ” ต่อมาเปลี่ยนเป็น “ นครอัมภางค์ ” และเปลี่ยนชื่อเป็น “ นครลำปาง ” ในภายหลัง
+ ในสมัยโยนกเชียงแสน นครลำปางเคยตกอยู่ภายใต้อำนาจของขอม เคยเป็นเมืองประเทศราชของพม่าและเมืองเชียงใหม่ ในสมัยพระเจ้ากรุงธนบุรี “ เจ้าทิพย์ช้าง ” สามารถขับไล่พวกพม่าออกจากเมืองลำปางได้สำเร็จ จึงได้รับการสถาปนาเป็น “ พระยาสุวลือไชยสงคราม ” ขึ้นครองนครลำปางในปี พ.ศ.2279
+ ในปี พ.ศ.2307 “ เจ้าแก้วฟ้า ” พระโอรสของเจ้าทิพย์ช้างได้ขึ้นครองนครลำปาง และเป็นต้นตระกูล ณ ลำปาง ณ ลำพูน รวมทั้ง ณ เชียงใหม่ ในเวลาต่อมา และมี “ เจ้าบุญวาทย์วงศ์มานิต ” เป็นผู้ครองนครลำปางองค์สุดท้าย
+  จังหวัดลำปางได้ประกาศจัดตั้งเป็นจังหวัด ในปี พ.ศ.2435 (สมัยรัชกาลที่ 5) โดยขึ้นอยู่กับมณฑลพายับสมัยหนึ่ง (พ.ศ.2443) ต่อมาแยกเป็นมณฑลมหาราษฎร์ ในปี พ.ศ.2458 ซึ่งในเวลาต่อมาได้มีประกาศยกเลิกมณฑลทั่วราชอาณาจักร ลำปางจึงมีฐานะเป็น “ จังหวัดลำปาง ” ตามพระราชบัญญัติระเบียบบริหารราชการอาณาจักรสยาม พ.ศ.2476
+
+</p>
+<hr>
+<h4 class="attachment-heading"><a href="https://upload.facebook.com/AppCreateUniversity/">เว็บเพจ จังหหวัดลำปาง</a></h4>
+<div class="attachment-text">
+  <iframe src="http://www.lampang.go.th/" height="600" width="800" frameborder="0"></iframe>
+
+</div>
+</div>
+</div>  
+	  
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.0.4
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="https://adminlte.io/themes/v3/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://adminlte.io/themes/v3/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="https://adminlte.io/themes/v3/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="https://adminlte.io/themes/v3/plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="https://adminlte.io/themes/v3/plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="https://adminlte.io/themes/v3/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="https://adminlte.io/themes/v3/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="https://adminlte.io/themes/v3/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="https://adminlte.io/themes/v3/plugins/moment/moment.min.js"></script>
+<script src="https://adminlte.io/themes/v3/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="https://adminlte.io/themes/v3/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="https://adminlte.io/themes/v3/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="https://adminlte.io/themes/v3/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="https://adminlte.io/themes/v3/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="https://www.masterhook.net/public/assets/dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="https://adminlte.io/themes/v3/dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="https://adminlte.io/themes/v3/dist/js/demo.js"></script>
+</body>
+</html>
